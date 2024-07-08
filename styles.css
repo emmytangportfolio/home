@@ -1,0 +1,141 @@
+body, h1, h2,h3, p,footer{
+    padding:0;
+    margin:0;
+    color:rgb(111, 47, 47);
+}
+body{background-color: #f5fcf8;}
+img{display:block;
+margin:auto;}
+#gridhome{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+article{
+    
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: -1px 1px 8px 1px rgba(164, 177, 184, 0.473);
+    width:300px;
+    padding-top:20px;
+    border-radius: 5px;
+}
+article img{
+    margin:0;
+    padding:0;
+    border-end-end-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+a{
+    color:rgb(111, 47, 47);
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-family:'poppins','Lucinda Sans';
+    font-weight: 400;
+}
+header h1{
+   
+    font-size: 30px;
+}
+h2{
+    font-size:20px;
+    padding:20px;
+    
+}
+h3{
+    margin:auto;
+    padding-bottom: 20px;
+}
+header{
+    /* margin:auto; */
+    padding:10px;
+    text-align: center;
+    
+    color: rgb(111, 47, 47);
+}
+#homehero{
+    padding-top:10px;
+    padding-bottom:10px;
+    background: rgb(255,218,234);
+    background: linear-gradient(45deg, rgba(255,218,234,1) 0%, rgba(255,255,255,1) 50%, rgba(238,253,254,1) 84%);
+}
+#homehero{ height:200px;}
+#intro{
+    padding-top:40px;
+    padding-bottom:0;
+    font-size:25px;
+}
+#intro2{
+padding-top:0;
+font-size: 20px;
+padding-bottom:25px;
+}
+#homehero p{
+margin:auto;
+padding-left:15px;
+padding-right:15px;
+}
+nav{ 
+    font-family:'poppins','Lucinda Sans';
+    font-size: 16px;
+}
+p{
+    font-family: 'gaegu','Lucinda Sans';
+    font-size: 18px;
+}
+#mainnav ul li{
+    list-style: none;
+    flex:1;
+    justify-content:space-around;
+    text-align:center;
+   
+}
+#mainnav ul{display:flex;
+    padding:0;
+}
+#mainnav ul li ul{
+	display:block;
+	position: absolute;
+	left:-9999px;
+}
+
+#mainnav ul li:hover ul{
+	left:auto;
+}
+#mainnav ul li ul li{
+    text-align: left;
+    background-color: rgb(76, 201, 233);
+    padding:5px;
+    color:white;
+
+}
+@keyframes bgcolor {
+    0% {
+        background-color: #CBE9FB
+    }
+
+    30% {
+        background-color: #faeefc
+    }
+
+    60% {
+        background-color: #fee2ed
+    }
+
+    90% {
+        background-color:#CBE9FB
+    }
+
+    100% {
+        background-color: #ffffff;
+    }
+}
+body:hover{
+    animation:bgcolor 15s linear;
+}
+/* .colors{
+    animation:bgcolor 15s linear;
+} */
