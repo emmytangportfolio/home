@@ -1,0 +1,135 @@
+body, h1, h2,h3, p,footer{
+    padding:0;
+    margin:0;
+    color:rgb(50, 52, 54);
+}
+body{background-color: #fdffff;
+}
+
+img{display:block;
+margin:auto;
+padding:10px;
+}
+
+a{
+    color:rgb(50, 52, 54);
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-family:'poppins','Lucinda Sans';
+    font-weight: 400;
+}
+header h1{
+   
+    font-size: 30px;
+}
+.dark{
+   background-color: rgb(50, 52, 54);
+}
+h2{
+    color:white;
+    font-size:20px;
+    padding:20px;
+    background-color:rgb(128, 208, 218) ;
+}
+h3{
+    margin:auto;
+    padding: 20px;
+}
+header{
+    /* margin:auto; */
+    padding:10px;
+    text-align: center;
+    
+    color:rgb(50, 52, 54);
+}
+
+
+nav{ 
+    font-family:'poppins','Lucinda Sans';
+    font-size: 16px;
+}
+p{
+    font-family: 'poppins','Lucinda Sans';
+    font-size: 15px;
+    padding:10px;
+}
+#mainnav ul li{
+    list-style: none;
+    flex:1;
+    justify-content:space-around;
+    text-align:center;
+    
+   
+}
+#mainnav ul{display:flex;
+    padding:0;
+}
+#mainnav ul li ul{
+	display:block;
+	position: absolute;
+	left:-9999px;
+}
+
+#mainnav ul li:hover ul{
+	left:auto;
+}
+#mainnav ul li ul li{
+    text-align: left;
+    background-color:rgb(50, 52, 54);
+    padding:5px;
+    border-bottom: 1px solid white;
+}
+#mainnav ul li ul li:last-of-type{
+    border-bottom: none;
+}
+#mainnav ul li ul li a{
+    color:white;
+}
+nav a:hover{
+    color:rgb(247, 130, 171);
+}
+#mainnav ul li ul li:hover{
+    
+    background-color:rgb(247, 130, 171);
+}
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    height:200px;
+    background: rgb(255,218,234);
+    background: linear-gradient(45deg, rgba(255,218,234,1) 0%, rgba(255,255,255,1) 50%, rgba(238,253,254,1) 84%);
+   
+   
+}
+footer p{font-family: 'poppins'; font-size: 16px;}
+footer a{
+    color:rgb(247, 130, 171);
+}
+footer div{
+   padding-top:80px;
+   padding-bottom:80px;
+    margin:auto;
+}
+
+
+
+/* Media query for width 500px and above */
+
+
+/* Media query for width 650px and above */
+@media (min-width: 650px) {
+  
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 20px;
+}
+    
+}

@@ -22,6 +22,7 @@ header h1{
     font-size: 30px;
 }
 h2{
+    color:white;
     font-size:20px;
     padding:20px;
     background-color:rgb(128, 208, 218) ;
@@ -68,13 +69,14 @@ nav{
 }
 p{
     font-family: 'gaegu','Lucinda Sans';
-    font-size: 18px;
+    font-size: 25px;
 }
 #mainnav ul li{
     list-style: none;
     flex:1;
     justify-content:space-around;
     text-align:center;
+    
    
 }
 #mainnav ul{display:flex;
@@ -132,8 +134,27 @@ article img{
     border-end-end-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+.small-fit {
+    max-width: 50%;
+    max-height: 100vh;
+    margin: auto;
+}
 article, a:hover{
     cursor: pointer;
+}
+.extlink{ 
+    color:rgb(247, 130, 171);
+}
+main div{
+    height:10px;
+}
+#madlibsdiv1{
+    display:flex;
 }
 #ntmy{
     font-family: 'gaegu';
@@ -173,30 +194,48 @@ footer div{
    padding-bottom:80px;
     margin:auto;
 }
-/* @keyframes bgcolor {
-    0% {
-        background-color: #CBE9FB
-    }
 
-    30% {
-        background-color: #faeefc
-    }
 
-    60% {
-        background-color: #fee2ed
-    }
 
-    90% {
-        background-color:#CBE9FB
+/* Media query for width 500px and above */
+@media (min-width: 500px) {
+    body {
+        width: 900px;
+        margin: auto;
     }
-
-    100% {
-        background-color: #ffffff;
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+        margin: auto;
     }
+    nav{
+        width:300px;
+    }
+    #intro{font-size: 50px;}
+    #intro2{font-size: 38px;}
 }
-body:hover{
-    animation:bgcolor 15s linear;
-} */
-/* .colors{
-    animation:bgcolor 15s linear;
-} */
+
+/* Media query for width 650px and above */
+@media (min-width: 650px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    #aboutdesc{
+        flex-direction: row;
+    }
+    #aboutdesc p{
+        width:400px;
+        margin:20px;
+    }
+    #aboutdesc img{
+        margin:auto;
+    }
+    
+    
+    
+}
